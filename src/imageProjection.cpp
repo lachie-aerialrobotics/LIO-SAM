@@ -525,8 +525,8 @@ public:
         for (int i = 0; i < cloudSize; ++i)
         {
             PointType thisPoint;
-            thisPoint.x = laserCloudIn->points[i].x;
-            thisPoint.y = laserCloudIn->points[i].y;
+            thisPoint.x = -laserCloudIn->points[i].x;
+            thisPoint.y = -laserCloudIn->points[i].y;
             thisPoint.z = laserCloudIn->points[i].z;
             thisPoint.intensity = laserCloudIn->points[i].intensity;
 
