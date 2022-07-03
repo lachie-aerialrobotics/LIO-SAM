@@ -1,8 +1,8 @@
 lio_sam:
 
   # Topics
-  pointCloudTopic: "os_cloud_node/points_stamped"               # Point cloud data
-  imuTopic: "/imu/data_rpy"                         # IMU data
+  pointCloudTopic: "/os_cloud_node/points_stamped"               # Point cloud data
+  imuTopic: "/mavros/imu/data"                         # IMU data
   odomTopic: "odometry/imu"                   # IMU pre-preintegration odometry, same frequency as IMU
   gpsTopic: "odometry/gpsz"                   # GPS odometry topic from navsat, see module_navsat.launch file
 
